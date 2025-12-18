@@ -472,7 +472,7 @@ const HomeSection = React.forwardRef(({ isVisible, scrollToSection }, ref) => {
             { value: 'UTeM', label: 'University' },
             { value: '4+', label: 'Projects' },
             { value: '8+', label: 'Technologies' },
-            { value: '2024', label: 'Graduate' }
+            { value: '2027', label: 'Graduate' }
           ].map((stat, index) => (
             <div
               key={index}
@@ -516,10 +516,14 @@ const AboutSection = React.forwardRef(({ isVisible }, ref) => {
           {/* Personal Info Card */}
           <div className={`md:col-span-1 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-800 border border-zinc-700 p-8 shadow-xl sticky top-24">
-              <div className="w-32 h-32 bg-gradient-to-br from-zinc-400 via-zinc-300 to-zinc-500 mx-auto mb-6 flex items-center justify-center shadow-lg">
-                <Code size={64} className="text-zinc-900" />
+              <div className="w-32 h-32 mx-auto mb-6 overflow-hidden shadow-2xl rounded-full border-4 border-zinc-400">
+                <img 
+                  src="/profile.jpg" 
+                  alt="Yap Zhan Hong" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-semibold -sm text-center mb-1 tracking-tight" style={{ 
+            <h3 className="text-xl font-semibold -sm text-center mb-1 tracking-tight" style={{ 
       background: 'linear-gradient(to bottom, #fafafa 0%, #e4e4e7 40%, #d4d4d8 100%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
