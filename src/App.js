@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, Mail, MapPin, Github, Linkedin, Award, Briefcase, GraduationCap, Code, ChevronRight, Download, BookOpen, Brain, Database, Smartphone, CheckCircle, Users, Clock, Target, PlayCircle, Settings, TestTube, Cpu, Boxes, Volume2,Phone } from 'lucide-react';
+import { Menu, X, Mail, MapPin, Github, Linkedin, Award, Briefcase, GraduationCap, Code, ChevronRight, Download, BookOpen, Brain, Database, Smartphone, CheckCircle, Users, Clock, Target, PlayCircle, Settings, TestTube, Cpu, Boxes, Volume2,Phone,Calendar } from 'lucide-react';
 
 /**
  * YAP ZHAN HONG - PROFESSIONAL PORTFOLIO
@@ -533,6 +533,7 @@ const AboutSection = React.forwardRef(({ isVisible }, ref) => {
               
               <div className="space-y-4 mb-6">
                 {[
+                  { icon: Calendar, label: 'Age', value: '22' },
                   { icon: MapPin, label: 'Location', value: 'Melaka, Malaysia' },
                   { icon: GraduationCap, label: 'University', value: 'UTeM' },
                   { icon: Phone, label: 'Phone', value: '+60166620589' },
